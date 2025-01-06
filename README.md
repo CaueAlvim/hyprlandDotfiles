@@ -4,6 +4,8 @@ hyprland hypridle hyprlock swww swaync kitty waybar xdg-desktop-portal-hyprland 
 ```
 
 Might change in the future
+```bash
 yazi
 polkit-kde-agent gammastep
 nautilus gnome-system-monitor gnome-disk-utility gnome-text-editor
+```
