@@ -1,0 +1,130 @@
+// Modules configurations
+
+{
+    "custom/appmenu": {
+        "format": "󰣇",
+        "tooltip": false,
+    },
+    
+    "custom/wallpaperSwitcher": {
+        "format": "",
+        "tooltip": false,
+        "return-type": "json",
+        "on-click": "bash $HOME/.config/waybar/scripts/changeWallpaper.sh",
+        "on-click-right": "bash $HOME/.config/waybar/scripts/changeWallpaper.sh",
+    },
+    
+    "custom/toolsIcon": {
+        "format": "",
+        "tooltip": false,
+    },
+    
+    "group/groupTools": {
+        "orientation": "horizontal",
+        "drawer": {
+            "transition-duration": 300,
+            "transition-left-to-right": false
+        },
+       "modules": [
+           "custom/toolsIcon",
+           "cpu",
+           "memory",
+           "custom/wallpaperSwitcher",
+       ]
+     },
+    
+    "hyprland/workspaces": {
+      //"disable-scroll": true,
+        "on-scroll-up": "hyprctl dispatch workspace e-1",
+    	"on-scroll-down": "hyprctl dispatch workspace e+1",
+        "all-outputs": true,
+        "warp-on-scroll": false,
+        "format": "{icon}",
+        "format-icons": {
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "urgent": "",
+            "focused": ""
+        }
+    },
+    
+    "tray": {
+        "icon-size": 20,
+        "spacing": 10
+    },
+    
+    "clock": {
+        "format": " {:%H:%M}",
+        "format-alt": "{:%A, %d %B %Y}",
+        "tooltip-format": "<span>{calendar}</span>",
+        "calendar": {
+            "mode": "month",
+            "mode-mon-col": 3,
+            "on-scroll": 1,
+            "on-click-right": "mode",
+            "format": {
+                "months": "<span color='#ffead3'><b>{}</b></span>",
+                "days": "<span color='#ffffff'><b>{}</b></span>",
+                "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+                "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+                "today": "<span color='#ff4a3d'><b><u>{}</u></b></span>"
+            }
+        },
+        "actions": {
+            "on-click-right": "mode",
+            "on-scroll-up": "shift_up",
+            "on-scroll-down": "shift_down"
+        }
+    },
+    
+    "cpu": {
+        "format": " {usage}%",
+        "tooltip": true,
+    },
+    
+    "memory": {
+        "interval": 10,
+        "format": " {}%",
+        "tooltip-format": "{used}G / {total}G",
+    },
+    
+    "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": " Connected{icon}",
+        "format-ethernet": "󰱓 Connected{icon}",
+        "tooltip-format": "{ifname}/{ipaddr} via {gwaddr} ",
+        "format-linked": "{ifname} (No IP) 󰍺",
+        "format-disconnected": "󰅛 Disconnected",
+    },
+    
+    "wireplumber": {
+    	"format": "{icon}",
+    	"format-muted": "",
+    	"tooltip": true,
+    	"tooltip-format": "Volume: {volume}%",
+    	"format-icons": ["", "", ""],
+    	"scroll-step": 5,
+    	"max-volume": 100,
+    	"on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+    },
+    
+//   "battery": {
+//         "states": {
+//         "good": 95,
+//          "warning": 30,
+//          "critical": 15
+//       },
+//       "format": "{capacity}% {icon}",
+//       "format-charging": "{capacity}% 󰂄",
+//       "format-plugged": "{capacity}% ",
+//       "format-alt": "{time} {icon}",
+//       "format-good": "", // An empty format will hide the module
+//       "format-full": "",
+//       "format-icons": ["", "", "", "", ""]
+//   },
+//   "battery#bat2": {
+//       "bat": "BAT2"
+//   },
+}
