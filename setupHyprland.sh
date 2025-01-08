@@ -19,4 +19,7 @@ sleep 0.5
 # Create folders
 xdg-user-dirs-update
 
+clear
+sleep 0.5
 echo "receba"
+echo "AGORA ATIVE UFW"
