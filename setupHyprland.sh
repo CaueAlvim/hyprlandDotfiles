@@ -9,7 +9,7 @@ sudo pacman -S hyprland hypridle hyprlock swww swaync kitty waybar xdg-desktop-p
 sleep 0.5
 
 # Install some other stuff
-sudo pacman -S starship fastfetch imagemagick opus opusfile mesa vulkan-radeon polkit-kde-agent gammastep --noconfirm
+sudo pacman -S fuzzel starship fastfetch imagemagick opus opusfile mesa vulkan-radeon polkit-kde-agent gammastep --noconfirm
 sleep 0.5
 
 # Install apps
