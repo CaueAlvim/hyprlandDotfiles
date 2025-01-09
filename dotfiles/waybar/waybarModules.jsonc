@@ -4,6 +4,9 @@
     "custom/appmenu": {
         "format": "󰣇",
         "tooltip": false,
+        "return-type": "json",
+        "on-click": "killall fuzzel || fuzzel",
+        "on-click-right": "killall fuzzel || fuzzel",
     },
     
     "custom/wallpaperSwitcher": {
