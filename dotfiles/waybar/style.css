@@ -51,24 +51,29 @@ window#waybar.hidden {
 }
 
 #custom-toolsIcon {
-    margin-right: 5px; 
+    margin-right: 8px; 
 }
 
 #custom-wallpaperSwitcher {
     color: @lightBlue;
-    margin-right: 20px;
-    margin-left: 5px;
+    margin-right: 25px;
+    margin-left: 8px;
 }
 
 #custom-powermenu {
     color: @lightRed;
-    margin-right: 21px;
+    margin-right: 25px;
+}
+
+#custom-notification {
+    font-size: 20px;
+    margin-right: 8px;
 }
 
 #custom-tools {
     color: @white;
     padding-top: 2px;
-    margin: 0px 5px 3px 5px;
+    margin: 0px 8px 3px 8px;
 }
 
 /* -----------------------------------------------------
@@ -95,20 +100,22 @@ window#waybar.hidden {
     color: #ffffff;
 }
 
-#memory,
-#wireplumber {
+#cpu,
+#memory {
     color: @white;
-    margin-right: 5px;
+    margin-right: 8px;
 }
 
-#cpu {
+#wireplumber {
     color: @white;
     padding-left: 0px;
+    margin-right: 8px;
 }
 
 #network {
     color: @lightBlue;
-    margin: 3px 15px 3px 0px;
+    /* In case of removing the notification center, Use 15px of margin right instead of 8 */
+    margin: 3px 8px 3px 0px;
 }
 
 #network.disconnected {
