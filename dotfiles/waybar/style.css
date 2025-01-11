@@ -54,11 +54,15 @@ window#waybar.hidden {
     margin-right: 5px; 
 }
 
-#custom-wallpaperSwitcher,
-#custom-powermenu {
+#custom-wallpaperSwitcher {
     color: @lightBlue;
     margin-right: 20px;
     margin-left: 5px;
+}
+
+#custom-powermenu {
+    color: @lightRed;
+    margin-right: 21px;
 }
 
 #custom-tools {
