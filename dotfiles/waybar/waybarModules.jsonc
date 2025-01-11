@@ -8,7 +8,15 @@
         "on-click": "killall fuzzel || fuzzel",
         "on-click-right": "killall fuzzel || fuzzel",
     },
-    
+
+    "custom/powermenu": {
+        "format": "⏻",
+        "tooltip": false,
+        "return-type": "json",
+        "on-click": "killall fuzzel || bash $HOME/.config/waybar/scripts/runPowermenu.sh",
+        "on-click-right": "killall fuzzel || bash $HOME/.config/waybar/scripts/runPowermenu.sh",
+    },
+
     "custom/wallpaperSwitcher": {
         "format": "",
         "tooltip": false,
@@ -33,6 +41,7 @@
            "cpu",
            "memory",
            "custom/wallpaperSwitcher",
+           "custom/powermenu",
        ]
      },
     
