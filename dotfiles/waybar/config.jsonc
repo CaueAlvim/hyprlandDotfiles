@@ -14,5 +14,5 @@
 
     "modules-left": [ "custom/appmenu", "hyprland/workspaces" ],
     "modules-center": [ "clock" ],
-    "modules-right": [ "tray", "wireplumber", "group/groupTools", "network" ],
+    "modules-right": [ "tray", "wireplumber", "group/groupTools", "network", "custom/notification" ],
 }
