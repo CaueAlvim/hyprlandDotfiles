@@ -89,11 +89,11 @@ name = DejaVu Sans
 # Font size (pt)
 size = 14
 # Font color (RGBA)
-color = #ffffffff
+color = #e0e0e0ff
 # Shadow color (RGBA)
-shadow = #181818
+shadow = #00000000
 # Background color (RGBA)
-background = #00000000
+background = #000000ff
 
 ################################################################################
 # Image meta info scheme (format, size, EXIF, etc)
