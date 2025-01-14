@@ -1,4 +1,9 @@
-#!/bin/sh
+#!/bin/bash
+
+if [[ `whoami` != 'root' ]]
+  then echo "Please run as root, sudo bash setupHyprland.sh"
+  exit
+fi
 
 # Update system
 sudo pacman -Syu --noconfirm
@@ -13,10 +18,10 @@ sudo pacman -S fuzzel starship fastfetch imagemagick opus opusfile mesa vulkan-r
 sleep 0.5
 
 # Install apps
-sudo pacman -S firefox nautilus gnome-system-monitor gnome-disk-utility gnome-text-editor loupe sushi --noconfirm
+sudo pacman -S firefox nautilus gnome-system-monitor gnome-disk-utility gnome-text-editor swayimg sushi --noconfirm
 sleep 0.5
 
-# Create folders
+# Create default folders
 xdg-user-dirs-update
 
 clear
