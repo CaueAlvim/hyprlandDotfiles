@@ -19,6 +19,13 @@ propo is proportionally-spaced (each letter takes up as much space as it needs)
     font-size: 18px;
 }
 
+tooltip {
+    background: @black;
+    border-radius: 15px;
+    border: 2px solid;
+    border-color: @lightBlue
+}
+
 window#waybar {
     background-color: transparent;
     color: #ffffff;
