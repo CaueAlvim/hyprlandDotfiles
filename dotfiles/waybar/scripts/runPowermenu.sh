@@ -20,7 +20,7 @@ case ${chosen} in
 		systemctl suspend
 	;;
 	$logout)
-		killall gammastep && loginctl terminate-user $USER
+		loginctl terminate-user $USER
 	;;
 	$reboot)
 		systemctl reboot
