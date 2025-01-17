@@ -6,10 +6,23 @@ this is repository for my hyprland config
 
 Main Packages
 ```bash
-hyprland hypridle hyprlock swww swaync kitty waybar xdg-desktop-portal-hyprland xdg-user-dirs ufw fwupd nano grim slurp ttf-dejavu ttf-dejavu-nerd
+hyprland hypridle hyprlock kitty waybar swaync xdg-desktop-portal-hyprland xdg-user-dirs ufw fwupd nano grim slurp swaybg ttf-dejavu ttf-dejavu-nerd fuzzel starship imagemagick opus opusfile mesa vulkan-radeon hyprpolkitagent hyprsunset
 ```
 
 Apps
 ```bash
-fuzzel starship fastfetch imagemagick opus opusfile mesa vulkan-radeon polkit-kde-agent gammastep firefox nautilus gnome-system-monitor gnome-disk-utility gnome-text-editor loupe sushi
+firefox swayimg nautilus sushi gvfs-mtp gnome-system-monitor gnome-disk-utility
+```
+
+Steam flatpak permissions (.local/share/flatpak/overrides)
+```bash
+[Context]
+shared=!ipc;!network
+devices=!all;input;dri
+features=!bluetooth;!devel
+filesystems=!xdg-music;!xdg-pictures;!xdg-run/app/com.discordapp.Discord
+
+[Session Bus Policy]
+org.kde.StatusNotifierWatcher=none
+org.gnome.SettingsDaemon.MediaKeys=none
 ```
