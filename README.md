@@ -14,7 +14,7 @@ Apps
 firefox swayimg nautilus sushi gvfs-mtp gnome-system-monitor gnome-disk-utility
 ```
 
-Steam flatpak permissions (.local/share/flatpak/overrides)
+Steam flatpak permissions (.local/share/flatpak/overrides/com.valvesoftware.Steam)
 ```bash
 [Context]
 shared=!ipc;!network
