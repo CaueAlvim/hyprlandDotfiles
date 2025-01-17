@@ -10,7 +10,7 @@ sudo pacman -Syu --noconfirm
 sleep 0.5
 
 # Install essential packages
-sudo pacman -S hyprland hypridle hyprlock swww swaync kitty waybar xdg-desktop-portal-hyprland xdg-user-dirs ufw fwupd nano grim slurp ttf-dejavu ttf-dejavu-nerd --noconfirm
+sudo pacman -S hyprland hypridle hyprlock kitty waybar swaync xdg-desktop-portal-hyprland xdg-user-dirs ufw fwupd nano grim slurp swaybg ttf-dejavu ttf-dejavu-nerd --noconfirm
 sleep 0.5
 
 # Install some other stuff
