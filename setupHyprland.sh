@@ -14,7 +14,7 @@ sudo pacman -S hyprland hypridle hyprlock kitty waybar swaync xdg-desktop-portal
 sleep 0.5
 
 # Install some other stuff
-sudo pacman -S fuzzel starship imagemagick opus opusfile mesa vulkan-radeon hyprpolkitagent hyprsunset --noconfirm
+sudo pacman -S fuzzel starship imagemagick opus opusfile mesa vulkan-radeon hyprpolkitagent hyprsunset greetd --noconfirm
 sleep 0.5
 
 # Install apps
@@ -27,4 +27,4 @@ xdg-user-dirs-update
 clear
 sleep 0.5
 echo "receba"
-echo "AGORA ATIVE UFW"
+echo "ATIVAR ufw E greetd, substitua o comando default no arquivo /etc/greetd/config.toml"
