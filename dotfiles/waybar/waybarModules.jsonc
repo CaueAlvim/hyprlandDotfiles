@@ -2,7 +2,7 @@
 
 {
     "custom/appmenu": {
-        "format": "󰣇",
+        "format": "\udb82\udcc7",
         "tooltip": false,
         "return-type": "json",
         "on-click": "killall fuzzel || fuzzel",
@@ -10,7 +10,7 @@
     },
 
     "custom/powermenu": {
-        "format": "⏻",
+        "format": "\u23fb",
         "tooltip": false,
         "return-type": "json",
         "on-click": "killall fuzzel || bash $HOME/.config/waybar/scripts/runPowermenu.sh",
@@ -21,14 +21,14 @@
         "tooltip": false,
         "format": "{icon}",
         "format-icons": {
-            "notification": "󱅫 ",
-            "none": "󰂚 ",
-            "dnd-notification": "󰅸 ",
-            "dnd-none": "󰂜 ",
-            "inhibited-notification": "󱅫 ",
-            "inhibited-none": "󰂚 ",
-            "dnd-inhibited-notification": "󰅸 ",
-            "dnd-inhibited-none": "󰂜 "
+            "notification": "\udb84\udd6b ",
+            "none": "\udb80\udc9a ",
+            "dnd-notification": "\udb80\udd78 ",
+            "dnd-none": "\udb80\udc9c ",
+            "inhibited-notification": "\udb84\udd6b ",
+            "inhibited-none": "\udb80\udc9a ",
+            "dnd-inhibited-notification": "\udb80\udd78 ",
+            "dnd-inhibited-none": "\udb80\udc9c "
         },
         "return-type": "json",
         "exec-if": "which swaync-client",
@@ -39,7 +39,7 @@
     },
 
     "custom/wallpaperSwitcher": {
-        "format": "",
+        "format": "\uf03e",
         "tooltip": false,
         "return-type": "json",
         "on-click": "bash $HOME/.config/waybar/scripts/changeWallpaper.sh",
@@ -47,7 +47,7 @@
     },
     
     "custom/toolsIcon": {
-        "format": "",
+        "format": "\uf51e",
         "tooltip": false,
     },
     
@@ -74,12 +74,12 @@
         "warp-on-scroll": false,
         "format": "{icon}",
         "format-icons": {
-            "1": "",
-            "2": "",
-            "3": "",
-            "4": "",
-            "urgent": "",
-            "focused": ""
+            "1": "\uf269",
+            "2": "\uf07c",
+            "3": "\uf489",
+            "4": "\uf121",
+            "urgent": "\ue007",
+            "focused": "\uf06a"
         }
     },
         
@@ -89,7 +89,7 @@
     },
     
     "clock": {
-        "format": " {:%H:%M}",
+        "format": "\uf017 {:%H:%M}",
         "format-alt": "{:%A, %d %B %Y}",
         "tooltip-format": "<span>{calendar}</span>",
         "calendar": {
@@ -113,31 +113,31 @@
     },
     
     "cpu": {
-        "format": " {usage}%",
+        "format": "\uf4bc {usage}%",
         "tooltip": true,
     },
     
     "memory": {
         "interval": 10,
-        "format": " {}%",
+        "format": "\uefc5 {}%",
         "tooltip-format": "{used}G / {total}G",
     },
     
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": " Connected{icon}",
-        "format-ethernet": "󰱓 Connected{icon}",
-        "tooltip-format": "{ifname}/{ipaddr} via {gwaddr} ",
-        "format-linked": "{ifname} (No IP) 󰍺",
-        "format-disconnected": "󰅛 Disconnected",
+        "format-wifi": "\uf1eb Connected{icon}",
+        "format-ethernet": "\udb83\udc53 Connected{icon}",
+        "tooltip-format": "{ifname}/{ipaddr} via {gwaddr} \uf14a",
+        "format-linked": "{ifname} (No IP) \udb80\udf7a",
+        "format-disconnected": "\udb80\udd5b Disconnected",
     },
     
     "wireplumber": {
         "format": "{icon}",
-        "format-muted": "",
+        "format-muted": "\ueee8",
         "tooltip": true,
         "tooltip-format": "Volume: {volume}%",
-        "format-icons": ["", "", ""],
+        "format-icons": ["\uf027", "\uf028", "\uf028"],
         "scroll-step": 5,
         "max-volume": 100,
         "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
@@ -150,12 +150,12 @@
     //          "critical": 15
     //       },
     //       "format": "{capacity}% {icon}",
-    //       "format-charging": "{capacity}% 󰂄",
-    //       "format-plugged": "{capacity}% ",
+    //       "format-charging": "{capacity}% \udb80\udc84",
+    //       "format-plugged": "{capacity}% \uf1e6",
     //       "format-alt": "{time} {icon}",
     //       "format-good": "", // An empty format will hide the module
     //       "format-full": "",
-    //       "format-icons": ["", "", "", "", ""]
+    //       "format-icons": ["\uf244", "\uf243", "\uf242", "\uf241", "\uf240"]
     //   },
     //   "battery#bat2": {
     //       "bat": "BAT2"
