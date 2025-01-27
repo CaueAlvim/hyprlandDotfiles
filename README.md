@@ -6,12 +6,12 @@ this is repository for my hyprland config
 
 Main Packages
 ```bash
-hyprland hypridle hyprlock kitty waybar swaync xdg-desktop-portal-hyprland xdg-user-dirs ufw fwupd nano grim slurp swaybg ttf-dejavu ttf-dejavu-nerd fuzzel starship imagemagick opus opusfile mesa vulkan-radeon hyprpolkitagent hyprsunset
+hyprland hypridle hyprlock kitty waybar swaync xdg-desktop-portal-hyprland xdg-user-dirs ufw fwupd nano grim slurp swww ttf-dejavu ttf-dejavu-nerd cantarell-fonts imagemagick hyprpolkitagent hyprsunset opus opusfile mesa vulkan-radeon greetd fuzzel starship fastfetch
 ```
 
 Apps
 ```bash
-firefox swayimg nautilus sushi gvfs-mtp gnome-system-monitor gnome-disk-utility
+firefox swayimg gvfs-mtp btop thunar thunar-volman tumbler
 ```
 
 Steam flatpak permissions (.local/share/flatpak/overrides/com.valvesoftware.Steam)
