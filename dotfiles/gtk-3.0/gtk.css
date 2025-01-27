@@ -1,0 +1,170 @@
+/* GTK 3 THEME BASED ON GTK 4/LIBADWAITA
+   ----------------
+   To debug thunar, execute this:
+
+   GTK_DEBUG=interactive thunar 
+*/
+
+/*********
+* Common *
+*********/
+
+@define-color theme_selected_bg_color rgb(87, 87, 87);
+@define-color theme_unfocused_selected_bg_color rgb(87, 87, 87);
+
+@define-color primary rgb(28, 28, 28);
+@define-color secondary rgb(43, 43, 43);
+@define-color tertiary rgb(57, 179, 227);
+
+@define-color hover rgb(64, 64, 64);
+@define-color selected rgb(89, 89, 89);
+
+@define-color fontColor rgb(227, 227, 227);
+@define-color fontColorBackdrop rgb(186, 186, 186);
+@define-color fontColorDisabled rgb(100, 100, 100);
+
+/**********
+ * Thunar *
+ **********/
+ 
+ .thunar * {
+  -ThunarAbstractIconView-row-spacing: 35;
+  -ThunarAbstractIconView-column-spacing: 17;
+}
+
+
+ /* Background (affects bottom status bar and everything else, i guess) */
+.thunar.background {
+  background-color: @secondary;
+  color: @fontColor;
+}
+
+
+/* Main view (affects side pane and file view) */
+.thunar .view,
+.thunar .iconview {
+  background-color: @primary;
+  color: @fontColor;
+}
+.thunar .view:backdrop,
+.thunar .iconview:backdrop {
+  color: @fontColorBackdrop;
+}
+
+
+/* Selection square */
+.thunar .rubberband {
+  border: 1px solid #7aa2f7;
+  background-color: rgba(69, 166, 245, 0.3);
+}
+
+
+/* Sidepane */
+.thunar scrolledwindow.sidebar,
+.thunar scrolledwindow.sidebar treeview.view {
+  background-color: @secondary;
+}
+.thunar scrolledwindow.sidebar treeview.view {
+  padding: 8px 10px 8px 0px;
+  color: @fontColor; 
+}
+.thunar scrolledwindow.sidebar:backdrop,
+.thunar scrolledwindow.sidebar treeview.view:backdrop {
+  color: @fontColorBackdrop;
+}
+.thunar scrolledwindow.sidebar treeview.view:hover {
+  background-color: @hover; 
+}
+.thunar scrolledwindow.sidebar treeview.view:selected {
+  background-color: @selected;
+  color: @fontColor;
+  border-radius: 0;
+  box-shadow: none; 
+}
+.thunar scrolledwindow.sidebar treeview.view:selected:backdrop {
+  background-color: @hover;
+}
+
+
+/* Top bar */
+.thunar toolbar {
+  background-color: @secondary;
+}
+.thunar toolbar.horizontal button image {
+  -gtk-icon-transform: scale(0.75);
+}
+.thunar toolbar.horizontal button {
+  background-color: transparent;
+  background-image: none;
+  border-color: transparent;
+  box-shadow: none;
+  -gtk-icon-shadow: none;
+  text-shadow: none;
+}
+.thunar toolbar.horizontal button {
+  color: @fontColor;
+}
+.thunar toolbar.horizontal button:backdrop {
+  color: @fontColorBackdrop;
+}
+.thunar toolbar.horizontal button:disabled {
+  color: @fontColorDisabled;
+}
+.thunar toolbar.horizontal button:hover,
+.thunar toolbar.horizontal button:active,
+.thunar toolbar.horizontal button:checked {
+  color: @tertiary;
+}
+.thunar toolbar button.path-bar-button,
+.thunar toolbar button.location-button {
+  background-color: transparent;
+  border: none;
+}
+.thunar button.toggle.path-bar-button:checked,
+.thunar toolbar .path-bar-button:checked {
+  border-radius: 5px; 
+  background: linear-gradient(to right, #38758c, #39b3e3);
+  color: @fontColor;
+}
+.thunar toolbar entry {
+  background: @primary;
+  color: @fontColor;
+}
+
+
+/* Infobar (bottom bar with buttons on Trash) */
+.thunar infobar box.horizontal {
+  background-color: @secondary;
+  border-color: @selected;
+}
+
+
+/* Borders */
+.thunar scrolledwindow {
+  border-color: @hover;
+}
+.thunar separator {
+  background-image: none;
+}
+
+
+/* Context menus, thunar doesn't have specific css classes for this */
+menu {
+  border-radius: 15px;
+  background-color: @hover;
+  background-clip: border-box;
+  border: 1px solid @secondary;
+  color: @fontColor;
+}
+menu menuitem {
+  min-height: 25px;
+  min-width: 40px;
+  padding: 5px 5px 5px;
+  color: @fontColor;
+  text-shadow: none;
+  border-radius: 10px;
+}
+menu menuitem:hover {
+  border-radius: 10px;
+  background-color: @selected;
+}
