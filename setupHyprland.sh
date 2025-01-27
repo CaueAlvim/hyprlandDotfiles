@@ -18,7 +18,7 @@ sudo pacman -S fuzzel starship imagemagick opus opusfile mesa vulkan-radeon hypr
 sleep 0.5
 
 # Install apps
-sudo pacman -S firefox swayimg nautilus sushi gvfs-mtp gnome-system-monitor gnome-disk-utility --noconfirm
+sudo pacman -S firefox swayimg gvfs-mtp btop thunar thunar-volman tumbler --noconfirm
 sleep 0.5
 
 # Create default folders
