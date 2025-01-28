@@ -33,13 +33,6 @@
 }
 
 
- /* Background (affects bottom status bar and everything else, i guess) */
-.thunar.background {
-  background-color: @secondary;
-  color: @fontColor;
-}
-
-
 /* Main view ( Ctrl+1 file view ) */
 .thunar scrolledwindow.standard-view widget.view {
   background-color: @primary;
@@ -47,6 +40,25 @@
 }
 .thunar scrolledwindow.standard-view widget.view:backdrop {
   color: @fontColorBackdrop;
+}
+
+
+/* List view ( Ctrl + 2 ) header buttons  */
+.thunar scrolledwindow treeview.view  {
+  background-color: @primary;
+  color: @fontColor;
+}
+.thunar scrolledwindow treeview.view:backdrop  {
+  color: @fontColorBackdrop;
+}
+
+
+/* List view header buttons  */
+.thunar treeview header button  {
+  border-color: @hover;
+  color: @fontColor;
+  background-color: @secondary;
+  text-shadow: none;
 }
 
 
@@ -81,6 +93,12 @@
 }
 .thunar scrolledwindow.sidebar treeview.view:selected:backdrop {
   background-color: @hover;
+}
+
+
+/* Separator border between Main View and Side pane */
+.thunar grid separator {
+  background-color: transparent;
 }
 
 
@@ -130,19 +148,20 @@
 }
 
 
+ /* Statusbar ( Bottom ) */
+.thunar grid paned {
+  background-color: @secondary;
+  color: @fontColor;
+}
+.thunar grid paned:backdrop {
+  color: @fontColorBackdrop;
+}
+
+
 /* Infobar (bottom bar with buttons on Trash) */
 .thunar infobar box.horizontal {
   background-color: @secondary;
   border-color: @selected;
-}
-
-
-/* List view (Ctrl + 2) header buttons  */
-.thunar treeview header button  {
-  border-color: @hover;
-  color: @fontColor;
-  background-color: @secondary;
-  text-shadow: none;
 }
 
 
