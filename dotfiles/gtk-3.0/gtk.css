@@ -29,7 +29,7 @@
  
  .thunar * {
   -ThunarAbstractIconView-row-spacing: 35;
-  -ThunarAbstractIconView-column-spacing: 17;
+  -ThunarAbstractIconView-column-spacing: 15;
 }
 
 
@@ -136,6 +136,15 @@
 .thunar infobar box.horizontal {
   background-color: @secondary;
   border-color: @selected;
+}
+
+
+/* List view (Ctrl + 2) header buttons  */
+.thunar treeview header button  {
+  border-color: @hover;
+  color: @fontColor;
+  background-color: @secondary;
+  text-shadow: none;
 }
 
 
