@@ -40,14 +40,14 @@
 }
 
 
-/* Main view (affects side pane and file view) */
-.thunar .view,
-.thunar .iconview {
+/* Main view ( Ctrl+1 file view ) */
+.thunar scrolledwindow.standard-view widget.view,
+.thunar scrolledwindow.standard-view widget.iconview {
   background-color: @primary;
   color: @fontColor;
 }
-.thunar .view:backdrop,
-.thunar .iconview:backdrop {
+.thunar scrolledwindow.standard-view widget.view:backdrop,
+.thunar scrolledwindow.standard-view widget.iconview:backdrop {
   color: @fontColorBackdrop;
 }
 
