@@ -41,13 +41,11 @@
 
 
 /* Main view ( Ctrl+1 file view ) */
-.thunar scrolledwindow.standard-view widget.view,
-.thunar scrolledwindow.standard-view widget.iconview {
+.thunar scrolledwindow.standard-view widget.view {
   background-color: @primary;
   color: @fontColor;
 }
-.thunar scrolledwindow.standard-view widget.view:backdrop,
-.thunar scrolledwindow.standard-view widget.iconview:backdrop {
+.thunar scrolledwindow.standard-view widget.view:backdrop {
   color: @fontColorBackdrop;
 }
 
