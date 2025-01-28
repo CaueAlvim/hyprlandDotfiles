@@ -31,7 +31,10 @@
   -ThunarAbstractIconView-row-spacing: 35;
   -ThunarAbstractIconView-column-spacing: 15;
 }
-
+/* Background of the entire app */
+.thunar.background  {
+  background-color: transparent;
+}
 
 /* Main view ( Ctrl+1 file view ) */
 .thunar scrolledwindow.standard-view widget.view {
@@ -98,7 +101,7 @@
 
 /* Separator border between Main View and Side pane */
 .thunar grid > paned > separator {
-  background-color: transparent;
+  background-color: @secondary;
 }
 
 
