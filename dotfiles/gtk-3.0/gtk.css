@@ -97,7 +97,7 @@
 
 
 /* Separator border between Main View and Side pane */
-.thunar grid separator {
+.thunar grid > paned > separator {
   background-color: transparent;
 }
 
@@ -149,12 +149,12 @@
 
 
  /* Statusbar ( Bottom ) */
-.thunar grid paned {
+.thunar grid > paned > paned > grid > widget {
   background-color: @secondary;
   color: @fontColor;
 }
-.thunar grid paned:backdrop {
-  color: @fontColorBackdrop;
+.thunar grid > paned > paned > grid > widget:backdrop {
+  color: @fontColor;
 }
 
 
