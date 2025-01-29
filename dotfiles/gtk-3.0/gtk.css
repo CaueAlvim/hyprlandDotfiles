@@ -73,15 +73,11 @@
 
 
 /* Sidepane */
-.thunar scrolledwindow.sidebar,
 .thunar scrolledwindow.sidebar treeview.view {
   background-color: @secondary;
-}
-.thunar scrolledwindow.sidebar treeview.view {
   padding: 8px 10px 8px 0px;
   color: @fontColor; 
 }
-.thunar scrolledwindow.sidebar:backdrop,
 .thunar scrolledwindow.sidebar treeview.view:backdrop {
   color: @fontColorBackdrop;
 }
