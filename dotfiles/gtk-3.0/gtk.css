@@ -38,21 +38,21 @@
 }
 
 /* Main view ( Ctrl+1 file view ) */
-.thunar scrolledwindow.standard-view widget.view {
+.thunar notebook stack scrolledwindow widget.view {
   background-color: @primary;
   color: @fontColor;
 }
-.thunar scrolledwindow.standard-view widget.view:backdrop {
+.thunar notebook stack scrolledwindow widget.view:backdrop {
   color: @fontColorBackdrop;
 }
 
 
 /* List view ( Ctrl + 2 ) header buttons  */
-.thunar scrolledwindow treeview.view  {
+.thunar notebook stack scrolledwindow treeview.view  {
   background-color: @primary;
   color: @fontColor;
 }
-.thunar scrolledwindow treeview.view:backdrop  {
+.thunar notebook stack scrolledwindow treeview.view:backdrop  {
   color: @fontColorBackdrop;
 }
 
@@ -67,7 +67,7 @@
 
 
 /* Selection square */
-.thunar .rubberband {
+.thunar notebook stack scrolledwindow widget .rubberband {
   border: 1px solid #7aa2f7;
   background-color: rgba(69, 166, 245, 0.3);
 }
