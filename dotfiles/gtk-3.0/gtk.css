@@ -32,8 +32,9 @@
   -ThunarAbstractIconView-column-spacing: 15;
 }
 /* Background of the entire app */
+/* should u want transparency on other components, this needs to be transparent as well */
 .thunar.background  {
-  background-color: transparent;
+  background-color: @primary;
 }
 
 /* Main view ( Ctrl+1 file view ) */
