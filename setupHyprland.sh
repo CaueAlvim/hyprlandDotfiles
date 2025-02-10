@@ -28,3 +28,4 @@ clear
 sleep 0.5
 echo "receba"
 echo "ATIVAR ufw E greetd, substitua o comando default no arquivo /etc/greetd/config.toml"
+echo "Atualizar firmware"
