@@ -9,12 +9,12 @@
 @define-color accent rgb(143, 232, 247);
 @define-color accentDarker rgb(44, 216, 245);
 
-
+/* border radius and margin with same values as hyprland's */
 .control-center {
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.8), inset 0 0 0 1px #313244;
   border: none;
-  border-radius: 20px;
-  margin: 10px 10px;
+  border-radius: 10px;
+  margin: 5px 10px;
   background: @base;
   padding: 14px;
 }
