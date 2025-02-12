@@ -57,72 +57,50 @@ window#waybar.hidden {
     margin: 3px 0px 3px 20px;
 }
 
-#custom-toolsIcon {
-    margin-right: 8px; 
+#custom-powermenu,
+#custom-wallpaperSwitcher {
+    padding: 0 15px;
 }
 
 #custom-wallpaperSwitcher {
     color: @lightBlue;
-    margin-right: 25px;
-    margin-left: 8px;
 }
 
 #custom-powermenu {
     color: @lightRed;
-    margin-right: 25px;
 }
 
 #custom-notification {
     font-size: 20px;
-    margin-right: 8px;
-}
-
-#custom-tools {
-    color: @white;
-    padding-top: 2px;
-    margin: 0px 8px 3px 8px;
 }
 
 /* -----------------------------------------------------
  * Main Modules
  * ----------------------------------------------------- */
  
+#cpu,
+#memory {
+    padding: 0 15px;
+    color: @white;
+}
+
+#custom-notification,
+#custom-toolsIcon,
 #clock,
 #battery,
-#cpu,
-#memory,
 #disk,
 #temperature,
 #backlight,
 #network,
 #pulseaudio,
 #wireplumber,
-#custom-media,
-#tray,
-#mode,
-#idle_inhibitor,
-#scratchpad,
-#mpd {
+#tray {
     padding: 0 10px;
-    color: #ffffff;
-}
-
-#cpu,
-#memory {
     color: @white;
-    margin-right: 8px;
-}
-
-#wireplumber {
-    color: @white;
-    padding-left: 0px;
-    margin-right: 8px;
 }
 
 #network {
     color: @lightBlue;
-    /* In case of removing the notification center, Use 15px of margin right instead of 8 */
-    margin: 3px 8px 3px 0px;
 }
 
 #network.disconnected {
