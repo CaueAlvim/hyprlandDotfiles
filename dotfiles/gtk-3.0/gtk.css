@@ -154,7 +154,7 @@
   color: @fontColor;
 }
 .thunar grid > paned > paned > grid > widget:backdrop {
-  color: @fontColor;
+  color: @fontColorBackdrop;
 }
 
 
@@ -164,6 +164,20 @@
   border-color: @selected;
 }
 
+
+/* Thunar tabs */
+.thunar notebook header tabs {
+  background-color: @secondary;
+  border: 1px solid @hover;
+}
+.thunar notebook header tabs tab {
+  background-color: @secondary;
+  color: @fontColor;
+  border: none;
+}
+.thunar notebook header tabs tab:backdrop {
+  color: @fontColorBackdrop;
+}
 
 /* Borders */
 .thunar scrolledwindow {
