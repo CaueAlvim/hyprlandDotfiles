@@ -22,10 +22,18 @@ sudo pacman -S firefox swayimg gvfs-mtp btop thunar thunar-volman tumbler --noco
 sleep 0.5
 
 # Create default folders
-xdg-user-dirs-update
+if [[ -d "$HOME/.config" ]]; then
+   echo "config folder already exists"
+else
+   echo "creating config folder"
+   mkdir $HOME/.config
+fi
+
+cp -r $HOME/hyprlandDotfiles/* $HOME/.config/
+
 
 clear
 sleep 0.5
 echo "receba"
 echo "ATIVAR ufw E greetd, substitua o comando default no arquivo /etc/greetd/config.toml"
-echo "Atualizar firmware"
+echo "Atualizar firmware e rodar xdg-user-dirs-update"
