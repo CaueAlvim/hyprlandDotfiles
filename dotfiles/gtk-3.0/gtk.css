@@ -220,3 +220,9 @@ menu menuitem:hover {
   border-radius: 10px;
   background-color: @selected;
 }
+
+/* Gtk waybar buttons incorrect hover colors fix */
+notebook > header > tabs > arrow:hover, button:hover {
+  background-image: none;
+  text-shadow: none;
+}
