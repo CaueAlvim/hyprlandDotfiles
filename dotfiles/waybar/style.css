@@ -139,6 +139,10 @@ button {
     transition: all 0.2s ease-in-out;
 }
 
+#workspaces button:hover {
+    background-color: @white;
+}
+
 #workspaces button.active {
     background-color: @lightBlue;
     color: @black;
