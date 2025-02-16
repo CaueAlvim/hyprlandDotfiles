@@ -2,7 +2,14 @@
    ----------------
    To debug thunar, execute this:
 
-   GTK_DEBUG=interactive thunar 
+   GTK_DEBUG=interactive thunar
+
+   sometimes this wont open the debug dialog, then run
+   
+   thunar -q
+
+   this happens cuz its somehow running in the backround
+   thus the theme wont apply properly
 */
 
 /*********
