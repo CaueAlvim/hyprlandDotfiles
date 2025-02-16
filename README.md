@@ -6,7 +6,7 @@ this is repository for my hyprland config
 
 Main Packages
 ```bash
-hyprland hypridle hyprlock kitty waybar swaync xdg-desktop-portal-hyprland xdg-user-dirs ufw fwupd nano grim slurp swww ttf-dejavu ttf-dejavu-nerd cantarell-fonts imagemagick hyprpolkitagent hyprsunset opus opusfile mesa vulkan-radeon greetd fuzzel starship fastfetch
+hyprland hypridle hyprlock kitty waybar swaync xdg-desktop-portal-hyprland xdg-user-dirs ufw fwupd sbctl nano grim slurp swww ttf-dejavu ttf-dejavu-nerd cantarell-fonts imagemagick hyprpolkitagent hyprsunset opus opusfile mesa vulkan-radeon greetd fuzzel starship
 ```
 
 Apps
