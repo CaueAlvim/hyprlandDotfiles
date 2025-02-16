@@ -190,16 +190,21 @@
 
 /* Context menus, thunar doesn't have specific css classes for this */
 menu {
-  border-radius: 15px;
+  border-radius: 12px;
+  padding: 8px;
   background-color: @hover;
   background-clip: border-box;
   border: 1px solid @secondary;
   color: @fontColor;
 }
+.csd.popup decoration {
+  border-radius: 12px;
+  box-shadow: none;
+}
 menu menuitem {
   min-height: 25px;
   min-width: 40px;
-  padding: 5px 5px 5px;
+  padding: 8px;
   color: @fontColor;
   text-shadow: none;
   border-radius: 10px;
