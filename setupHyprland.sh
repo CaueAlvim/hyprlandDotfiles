@@ -14,7 +14,7 @@ sudo pacman -S hyprland hypridle hyprlock kitty waybar swaync xdg-desktop-portal
 sleep 0.5
 
 # Install some other stuff
-sudo pacman -S imagemagick hyprpolkitagent hyprsunset opus opusfile mesa vulkan-radeon greetd fuzzel starship fastfetch --noconfirm
+sudo pacman -S imagemagick hyprpolkitagent hyprsunset opus opusfile mesa vulkan-radeon greetd fuzzel starship --noconfirm
 sleep 0.5
 
 # Install apps
