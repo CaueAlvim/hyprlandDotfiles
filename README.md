@@ -14,7 +14,7 @@ Apps
 swayimg gvfs-mtp btop thunar thunar-volman tumbler
 ```
 
-Zen Browser flatpak permissions (.local/share/flatpak/overrides/app.zen_browser)
+Zen Browser flatpak permissions (.local/share/flatpak/overrides/app.zen_browser.zen)
 ```bash
 [Context]
 shared=!ipc
