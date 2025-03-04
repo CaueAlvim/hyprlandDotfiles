@@ -18,7 +18,7 @@ sudo pacman -S imagemagick hyprpolkitagent hyprsunset opus opusfile mesa vulkan-
 sleep 0.5
 
 # Install apps
-sudo pacman -S firefox swayimg gvfs-mtp btop thunar thunar-volman tumbler --noconfirm
+sudo pacman -S swayimg gvfs-mtp btop thunar thunar-volman tumbler --noconfirm
 sleep 0.5
 
 clear
