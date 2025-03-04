@@ -14,6 +14,14 @@ Apps
 swayimg gvfs-mtp btop thunar thunar-volman tumbler
 ```
 
+Zen Browser flatpak permissions (.local/share/flatpak/overrides/app.zen_browser)
+```bash
+[Context]
+shared=!ipc
+sockets=!cups;!pcsc;!fallback-x11;!x11
+devices=!all;dri
+```
+
 Steam flatpak permissions (.local/share/flatpak/overrides/com.valvesoftware.Steam)
 ```bash
 [Context]
