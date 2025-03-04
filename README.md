@@ -11,7 +11,7 @@ hyprland hypridle hyprlock kitty waybar swaync xdg-desktop-portal-hyprland xdg-u
 
 Apps
 ```bash
-firefox swayimg gvfs-mtp btop thunar thunar-volman tumbler
+swayimg gvfs-mtp btop thunar thunar-volman tumbler
 ```
 
 Steam flatpak permissions (.local/share/flatpak/overrides/com.valvesoftware.Steam)
@@ -23,6 +23,5 @@ features=!bluetooth;!devel
 filesystems=!xdg-music;!xdg-pictures;!xdg-run/app/com.discordapp.Discord
 
 [Session Bus Policy]
-org.kde.StatusNotifierWatcher=none
 org.gnome.SettingsDaemon.MediaKeys=none
 ```
